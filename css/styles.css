@@ -1,0 +1,377 @@
+body {
+    background-color:#F3F2F2;
+    font-family: 'Open Sans', sans-serif;
+    color: #69686D;
+    margin:0px;
+    padding:0%;
+
+    /* border: 1px dashed #48C0AA;
+    border-radius: 15px; */
+}
+
+.fade{
+    display: none;
+    background-color:#F3F2F2;
+}
+
+
+h3{
+    color: #FD636B;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 148.19%;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+}
+p {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 182.69%;
+
+    /* border: 1px dashed #48C0AA;
+    border-radius: 15px; */
+}
+
+ul {
+    padding:0%;
+}
+
+li {font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 182.69%;
+}
+
+button {
+    border: none;
+    color: #FD636B;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    background-color: white 10%;
+    border: 2px solid #FD636B;
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 254px;
+    height: 50px;
+    cursor: pointer;
+    transition: all .3s ease;
+  }
+
+button:hover{
+    background-color: #FD636B;
+    color: white;
+}
+
+nav{ 
+    padding: 1%;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.195em;
+    background-color: rgb(243, 242, 242, 0.9);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+
+    /* border: 1px dashed #48C0AA;
+    border-radius: 15px; */
+}
+.navContainer{
+    display: none;
+}
+.navList{
+    width: 50%;
+    margin-left: auto;
+    margin-right: 50px;
+    float: right;
+    padding: 0 auto;
+    vertical-align:middle;
+    cursor: pointer;
+}
+
+/* .navItem:hover{
+    text-decoration: underline solid #FD636B 10px;
+} */
+.navItem{
+    padding: 0px 20px 0px 20px;
+    float:right;
+}
+
+.heroBanner {
+    padding: 80px 0 120px 0;
+    text-align: center;
+}
+
+
+.aboutTitle{
+    width:25%;
+}
+
+.about {
+    width: 50%;
+}
+
+.aboutParagraph{
+    padding: 0 20px;
+}
+
+.aboutSection{
+    height: 650px;
+    display: flex;
+}
+
+.imgContainer{
+    width: 25%;
+}
+
+.heroImg{
+    max-width: 316px;
+    float: right;
+
+    /* border: 1px dashed #48C0AA;
+    border-radius: 15px; */
+}
+
+footer{
+   align-self: center;
+    /* border: 1px dashed #48C0AA;
+    border-radius: 15px; */
+}
+
+#footerText{
+    font-size: 10px;
+    font-weight: 400;
+    text-align: center;
+}
+
+/* .content{
+    width: 30%;
+    margin: 0 auto;
+} */
+
+.inline-block{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.logo{
+    width: 23%;
+    padding-top: 20px;
+    padding-left: 30px;
+    text-align: center;
+}
+
+#logo{
+    width: 278px;
+   
+}
+
+.skillsList{
+    list-style: none;
+    line-height: 234%;
+}
+
+.mySkills{
+    display: flex;
+    background-color: white;
+    padding: 5% 10%;
+}
+
+.fullWidth{
+      width:100vw;
+}
+.flexContainer{
+    width: 20%;
+}
+
+
+.divider {
+    width: 92px;
+    padding-top: 100px;
+}
+
+#workGrid {
+    display: grid;
+    position:relative;
+    min-height: 500px;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+    "project1 project1"
+    "project2 project3";
+  }
+
+.workGridArea {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: flex-end;
+    display: flex;
+    position: relative;
+    padding-bottom: 40px;
+}
+
+#overlay{
+    position: fixed; /* Sit on top of the page content */
+    display: contents; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+}
+
+#project1{
+    grid-area: project1;
+    height: 460px;
+    background-image: url(../images/ABC_multidevices_white.jpg)
+}
+
+#project2{
+    grid-area: project2;
+    height: 460px;
+    background-color: rgb(255, 185, 127);
+}
+
+#project3{
+    grid-area: project3;
+    height: 460px;
+    background-color: cadetblue;
+}
+
+.caseDescription{
+    margin: 0 50px;
+    color: white;
+}
+
+#aboutGrid {
+    display: grid;
+    position:relative;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    grid-template-areas: 
+    "aboutTitle aboutPara heroImg";
+    padding: 10%;
+  }
+
+  #aboutMobile{
+      display: none;
+  }
+
+  .aboutGridArea {
+    display: flex;
+    position: relative;
+  }
+
+  #aboutPara{
+      padding: 0 100px 0 100px;
+  }
+
+  #aboutText{
+    padding-bottom: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+
+
+    #logo{
+        width: 210px;
+        
+    }
+    .navContainer{
+        display: flex;
+        float: right;
+    }
+
+    .navList{
+        display: none;
+    }
+
+    .heroBanner {
+        height: 300px;
+        position:absolute;
+        padding: 50%;
+        text-align: center;
+    }
+
+    .flexContainer {
+        width: 100%;
+        text-align: center;
+    }
+    .mySkills{
+        display: block;
+        padding-left: 0%;
+    }
+    #workGrid{
+        display: block;
+    }
+
+    .workGridArea{
+        align-items: flex-end;
+        padding-bottom: 30px;
+    }
+
+    .caseDescription{
+        text-shadow: 2px 2px 20px black;
+    }
+
+    .aboutGridArea{
+        align-items: flex-end;
+        padding-bottom: 30px;
+    }
+
+    #aboutGrid {
+        display: none;
+    }
+
+    #aboutMobile {
+        display: grid;
+        position:relative;
+        grid-template-columns: auto;
+        padding: 10%;
+        align-content: center;
+      }
+
+    #aboutPara{
+        padding: 0 30px 0 30px;
+    }
+
+    #heroImg{
+        align-content: center;
+    }
+    .heroImgMobile{
+        width: 200px;
+        display: block;
+        margin: 15%;
+    }
+    .imageContainer {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+   
+    #titleMobile{
+        text-align: center;
+    }
+    #aboutTextMobile{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .buttonContainer {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+}

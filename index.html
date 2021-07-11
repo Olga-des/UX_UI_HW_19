@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="js/index.js"></script>
+        <link href="css/styles.css" rel="stylesheet" type="text/css">
+         <title>Olga Peshkova</title>
+    </head>
+    <body class="fade">
+        <header>
+            <nav>
+                <div class="inline-block logo">
+                    <img id=logo 
+                        src="images/logo.png" 
+                        alt="logo">
+                </div>
+                    <ul class="navList">
+                        <li class="inline-block navItem" id="about">about</li>
+                        <li class="inline-block navItem" id="work">work</li>
+                        <li class="inline-block navItem">contact</li>
+                    </ul>
+                    <div id="underline"></div>
+                <div class="navContainer">
+                    <img 
+                        src="images/menu.png" 
+                        alt="menu">
+                </div>
+            </nav>      
+        </header>
+        <div>
+            <div class="heroBanner">
+                <p id="introDescription">UI DESIGNER MELBOURNE
+                </p> 
+                <p id="introSummary">Brief brand statement goes here, more than likely it will go over two lines
+                </p> 
+            </div>    
+        </div>
+
+            <!-- My Work section coded using CSS flex-->
+
+        <div id="workGrid" id="overlay" >
+            <div id="project1" class="workGridArea">
+                <div class="caseDescription"> 
+                    <h4>ABC Responsive Web Design</h4>
+                    <p>Some text goes here. Some text goes here.</p>
+                    <button>View Project</button>
+                </div>
+            </div>
+            <div id="project2" class="workGridArea">
+                <div class="caseDescription">
+                    <h4>Project2</h4>
+                    <p>Some text goes here. Some text goes here.</p>
+                    <button>View Project</button>
+                </div>
+            </div >
+            <div id="project3" class="workGridArea">
+                <div class="caseDescription">
+                    <h4>Case Study 3</h4>
+                    <p>Some text goes here. Some text goes here.</p>
+                    <button>View Project</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="aboutMobile">
+            <div class="imageContainer">
+                <img class="heroImgMobile" src="images/profile_photo.png" 
+                alt="profile-photo">
+            </div>
+            <div id="titleMobile">
+                <h3>About</h3>
+            </div>
+            <div id="aboutTextMobile">
+                <p>
+                    Hi there, my name is Olga Peshkova. I'm based in Melbourne and specialise in user research, responsive web, desktop and mobile design. 
+                    Over the past 10 years I've drawn from my graphic design background to complete a wide range of projects in branding, illustration, photography, digital and print media. With this experience I've taken the next step into the world of UX/UI where I can put my efforts into improving and designing digital products that are beautiful, simple and efficient.
+                    Outside of work I enjoy reading, working on personal creative projects, learning and messing around in the garden with my beautiful labrador, Sam. 
+                </p>
+            </div>
+            <div class="buttonContainer">
+                    <button id=aboutButton>Download Resume</button>
+            </div>
+        </div>
+        <div id="aboutGrid">
+            <div id="aboutTitle" class="aboutGridArea">
+                <div>
+                    <h3>About</h3>
+                </div>
+            </div>
+            <div id="aboutPara" class="aboutGridArea">
+                <div>
+                    <p id="aboutText">
+                        Hi there, my name is Olga Peshkova. I'm based in Melbourne and specialise in user research, responsive web, desktop and mobile design. 
+                        Over the past 10 years I've drawn from my graphic design background to complete a wide range of projects in branding, illustration, photography, digital and print media. With this experience I've taken the next step into the world of UX/UI where I can put my efforts into improving and designing digital products that are beautiful, simple and efficient.
+                        Outside of work I enjoy reading, working on personal creative projects, learning and messing around in the garden with my beautiful labrador, Sam. 
+                    </p>
+
+                    <div>
+                        <button id=aboutButton>Download Resume</button>
+                    </div>
+                </div>
+            </div>
+            <div id="heroImg" class="aboutGridArea">
+                <div class="imageContainer">
+                    <img class="heroImg" 
+                    src="images/profile_photo.png" 
+                    alt="profile-photo">
+                </div>
+            </div>
+
+        </div>
+
+    <!-- My UX Skills section coded using CSS flex-->
+
+    <div class="mySkills fullWidth">
+            <div class="flexContainer">
+                <h3 class="skillsList">Skills</h3>  
+            </div>
+            <div class="flexContainer">
+                <img>
+                <ul class="skillsList">
+                    <h4>UX</h4>
+                    <li>A/B Testing</li>
+                    <li>Affinity Diagrams</li>
+                    <li>Card Sorting</li>
+                    <li>Data Synthesis & Analysis</li>
+                    <li>Persona Creation</li>
+                    <li>User Interviews Planning</li>
+                    <li>User Interviews</li>
+                    <li>User Research</li>
+                    <li>Usability Testing</li>
+                    <li>User Observation</li>
+                    <img src="images/divider.png" class=divider>
+                </ul>
+            </div>
+            <div class="flexContainer">
+                <img>
+                <ul class="skillsList">
+                    <h4>UI</h4>
+                    <li>Sitemapping</li>
+                    <li>Interaction Design</li>
+                    <li>Wireframes</li>
+                    <li>Mockups</li>
+                    <li>Prototyping</li>
+                    <li>Scenario Design</li>
+                    <li>Sketching</li>
+                    <li>Storyboarding</li>
+                    <li>UI Design</li>
+                    <li>UI Specification</li>
+                    <li>Redlining</li>
+                </ul>
+            </div>
+            <div class="flexContainer">
+                <img>
+                <ul class="skillsList">
+                    <h4>Graphic Design</h4>
+                    <li>Aesthetics</li>
+                    <li>Branding</li>
+                    <li>Color Theory</li>
+                    <li>Gestalt Principles</li>
+                    <li>Icon Design</li>
+                    <li>Illustrations</li>
+                    <li>Imagery</li>
+                    <li>Layout Design</li>
+                    <li>Photography</li>
+                    <li>Photo Retouching</li>
+                    <li>Typography</li>
+                </ul>
+            </div>
+        </div>
+        <footer>
+            <p id=footerText>
+                © 2021 Olga Peshkova. All Rights Reserved.
+            </p>
+        </footer>
+    </body>
+</html>
