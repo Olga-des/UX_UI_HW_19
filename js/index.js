@@ -13,4 +13,9 @@ $(document).ready(function(){
         }, 1000);  
     });
 
+    function fade(){
+        $('.preloader').fadeOut("slow");
+    }
+    setTimeout(fade, 2000);
+
   });
