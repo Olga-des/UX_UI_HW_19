@@ -63,6 +63,23 @@ button {
     transition: all .3s ease;
   }
 
+.imgButton{
+    border: none;
+    color: #FD636B;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    background-color:#F3F2F2;
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 254px;
+    height: 50px;
+    box-shadow:  0px 2px 6px #866b72;
+
+  }
+
 button:hover{
     background-color: #FD636B;
     color: white;
@@ -78,7 +95,7 @@ nav{
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 100;
+    z-index: 100000;
 
     /* border: 1px dashed #48C0AA;
     border-radius: 15px; */
@@ -105,8 +122,11 @@ nav{
 }
 
 .heroBanner {
-    padding: 80px 0 120px 0;
+    padding: 120px 0 100px 0;
     text-align: center;
+    position: relative;
+    background-color: #FAACA8;
+    background-image: linear-gradient(19deg, #f8c9be 0%, #dfddfd 100%);
 }
 
 
@@ -162,7 +182,7 @@ footer{
 }
 
 .logo{
-    width: 23%;
+    
     padding-top: 20px;
     padding-left: 30px;
     text-align: center;
@@ -314,13 +334,25 @@ footer{
 @media only screen and (max-width: 600px) {
 
 
+    nav{
+        padding-left: none;
+        align-content: center;
+    }
     #logo{
-        width: 210px;
-        
+        width: 200px;
+        }
+    .logo{
+
+        padding-top: 20px;
+        padding-left: 20px;
+        text-align: center;
     }
     .navContainer{
         display: flex;
         float: right;
+        width: 50px;
+        padding-right: 20px;
+    
     }
 
     .navList{
@@ -328,9 +360,8 @@ footer{
     }
 
     .heroBanner {
-        height: 300px;
-        position:absolute;
-        padding: 50%;
+        height: auto;
+        padding:30% 10% 10% 10%;
         text-align: center;
     }
 
