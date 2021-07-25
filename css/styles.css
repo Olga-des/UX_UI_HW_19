@@ -282,7 +282,8 @@ footer{
 #project2{
     grid-area: project2;
     height: 460px;
-    background-color: rgb(255, 185, 127);
+    /* width: fit-content; */
+    /* background-color:url(../images/Link2Care_App_1.jpg); */
 }
 
 #project3{
@@ -291,6 +292,9 @@ footer{
     background-color: cadetblue;
 }
 
+#description{
+    max-width: 30%;
+}
 .caseDescription{
     margin: 0 50px;
     color: white;
